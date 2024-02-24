@@ -1,0 +1,23 @@
+.about-container{
+    background-color: rgb(14, 14, 14);
+    backdrop-filter: blur(10px);
+    width:100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-wrapper{
+    gap: 10px;
+    display:flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.about-gif{
+}
+
+.about-gif img{
+    height: 200px;
+    border-radius: 100px;
+}
