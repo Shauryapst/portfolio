@@ -12,6 +12,7 @@
     transition: color 0.3s ease;
     border-radius: 10px;
     border: black solid 2px;
+    transition: border 0.35s ease;
     padding:10px;
   }
   
@@ -21,8 +22,6 @@
   }
   
   .icon-container i {
-    font-size: 36px; /* Adjust icon size */
+    font-size: 36px; 
   }
-  .icon{
-    
-  }
+  

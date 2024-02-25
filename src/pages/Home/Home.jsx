@@ -1,8 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Home.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
-    <div className="home-container">
+    <div className="home-container" data-aos="fade-left" >
       <div className="home-wrapper">
         <div className="home-title">HEY, I'M SHAURYA</div>
         <div className="home-description">

@@ -1,17 +1,22 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./About.css";
 import s1 from "../../assets/gifs/s1.gif";
 import s2 from "../../assets/gifs/s2.gif";
 import Icons from "../../component/Tech-Icons/Icons";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const About = () => {
+    useEffect(() => {
+        AOS.init();
+      }, [])
   return (
     <div className="about-container">
       <div className="about-wrapper">
         <div className="about-introduction">
-          <div className="about-gif">
+          <div className="about-gif" data-aos="fade-right"  >
             <img src={s1} alt="adsfa" />
           </div>
-          <div className="about-content">
+          <div className="about-content" data-aos="fade-left"  >
             Hey there! I'm a{" "}
             <span class="animated-word">full stack developer</span> who loves
             creating cool stuff with code. I graduated from{" "}

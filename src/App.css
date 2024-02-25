@@ -1,8 +1,17 @@
 .App {
+  padding-top: 65px; 
   text-align: center;
-  margin:0;
-  height: 100vh;
-  
+  margin: 0;
+  display: grid;
+  height: 100%;
+  width:100%;
+  flex-direction: column;
+
+}
+.full-screen {
+  min-height: 100vh; 
 }
 
-::-webkit-scrollbar {display:none;}
+::-webkit-scrollbar {
+  display: none;
+}
