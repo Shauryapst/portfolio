@@ -1,0 +1,19 @@
+.certificate-container{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+.certificate-wrapper{
+    background-color: rgba(255, 255, 255, 0.029);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+  
+    color: white;
+    width:90%;
+    max-width: 900px;
+    min-height: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}

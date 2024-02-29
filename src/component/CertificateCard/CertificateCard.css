@@ -1,0 +1,31 @@
+.certifcate-card-wrapper{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    border: white solid 2px;
+    transition: border 0.35s ease;
+    justify-content: center;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* .certifcate-card-wrapper :hover {
+    border: rgba(214, 214, 214, 0.457) solid 2px;
+    transition: border 0.35s ease;
+  } */
+
+.certifcate-card-img{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.certifcate-card-img img{
+    height: 200px;
+}
+
+.certifcate-card-title{
+    margin-bottom: 20px;
+    color: white;
+}
