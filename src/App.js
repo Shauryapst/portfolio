@@ -8,6 +8,7 @@ import Certificates from "./pages/Certificates/Certificates";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import Contact from "./pages/Contact/Contact";
 function App() {
  
 
@@ -28,6 +29,10 @@ function App() {
 
       <section id='certificate' class="full-screen">
         <Certificates />
+      </section>
+
+      <section id='contact' class="full-screen">
+        <Contact />
       </section> 
     </div>
   );
