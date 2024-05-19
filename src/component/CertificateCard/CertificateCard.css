@@ -1,31 +1,74 @@
-.certifcate-card-wrapper{
-    display: flex;
-    
-    flex-direction: column;
-    align-items: center;
-    border: white solid 2px;
-    transition: border 0.35s ease;
-    justify-content: center;
-    
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+/* Default styles */
+.certificate-card-container {
+    width: 100%;
+    max-width: 350px;
+    margin: 2em auto;
+    background-color: rgba(47, 47, 47, 0.219);
+    border-radius: 15px;
+    padding: 2rem;
+  }
+/* Eye view */
+.certificate-hero-image-container::after {
+    content: '';
+    background-image: url("https://i.postimg.cc/9MtT4GZY/view.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-color: rgba(178, 255, 255, 0.3);
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+  
+  .certificate-hero-image-container:hover::after {
+    opacity: 1;
+  }
+  
+  
+  .certificate-hero-image-container {
+    display: block;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+  }
 
-/* .certifcate-card-wrapper :hover {
-    border: rgba(214, 214, 214, 0.457) solid 2px;
-    transition: border 0.35s ease;
-  } */
-
-.certifcate-card-img{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.certifcate-card-img img{
-    height: 200px;
-}
-
-.certifcate-card-title{
-    margin-bottom: 20px;
-    color: white;
-}
+  
+  .certificate-hero-image {
+    width: 100%;
+    transition: transform 0.3s ease; /* Add transition for smoother effect */
+  }
+  
+  .certificate-hero-image:hover {
+    transform: scale(1.2);
+  }
+  .certificate-main-content {
+    text-align: center;
+  }
+  
+  .certificate-paragraph {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin-top: 1em;
+    color: #eaf4f4;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .certificate-card-container {
+      max-width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .certificate-card-container {
+      padding: 1rem;
+    }
+  }
+  

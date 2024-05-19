@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import LogoImg from '../../assets/logo-no-background.png';
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -19,7 +20,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="navbar-logo">Logo</div>
+        <div className="navbar-logo">
+          <img src= {LogoImg}/>
+        </div>
         <div className="navbar-toggle" onClick={toggleNavbar}>
           <FontAwesomeIcon icon={faBars} />
         </div>
@@ -30,9 +33,9 @@ const Navbar = () => {
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
+          {/* <a href="#resume">Resume</a> */}
+          <a href="#certificate">Certificate</a>
           <a href="#contact">Contact</a>
-          <a href="#resume">Resume</a>
-          <a href="#certificates">Certificates</a>
         </div>
       </div>
     </nav>

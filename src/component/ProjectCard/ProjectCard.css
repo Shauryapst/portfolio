@@ -13,6 +13,7 @@
 
 .product-card-img img {
   height: 200px;
+  width: 300px;
 }
 
 .product-card-content {
@@ -59,10 +60,24 @@
   color: #fff;
   background-color: #15883e;
   height: 48px;
-  :hover {
-    background-color: #1db954;
-  }
+  
 }
+
+.product-card-actions button:disabled {
+  background-color: #393939;
+}
+
+
+
+.product-card-actions button:disabled:hover {
+  background-color: #393939;
+
+}
+
+.product-card-actions button:hover {
+  background-color: #1db954;
+}
+
 
 @media screen and (max-width: 768px) {
   .product-card-img {
