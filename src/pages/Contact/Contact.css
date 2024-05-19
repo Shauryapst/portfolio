@@ -6,6 +6,8 @@
   display: flex;
   justify-content: space-around;
   height: 100%;
+  
+  font-family: 'Montserrat', sans-serif;
 }
 
 .contact-wrapper {
@@ -60,10 +62,13 @@
 }
 
 .contact-email-form input {
-  background-color: transparent;
   border: none;
-  border-bottom: 1px solid white;
-  color: white;
+  outline: none;
+  background: #eee;
+  padding: 20px;
+  border-radius: 6px;
+ 
+  font-size: 100%;
 }
 
 .contact-email-form label {
@@ -75,14 +80,22 @@
 .contact-email-form input[type="text"],
 input[type="email"],
 textarea {
-  padding: 5px;
+  padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  /* border: 1px solid #ccc;
+  border-radius: 4px; */
 }
 
 .contact-email-form textarea {
-  height: 100%;
+
+  border: none;
+  outline: none;
+  resize: none;
+  background: #eee;
+  padding: 20px;
+  border-radius: 6px;
+  
+  font-size: 100%;
 }
 
 .contact-email-form textarea :focus {
@@ -90,13 +103,13 @@ textarea {
 }
 
 .contact-email-form button {
-  padding: 5px 10px;
-  background-color: #4caf50;
+  background-color: #578a59;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 14px;
+  padding: 20px;
 }
 
 .contact-email-form button:hover {

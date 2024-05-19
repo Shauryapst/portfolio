@@ -25,27 +25,31 @@ const Contact = () => {
           <div class="contact-email-form-wrapper">
             <h2>Get in touch!</h2>
             <form className="contact-email-form" onSubmit={handleSubmit}>
-              <label htmlFor="name">Name:</label>
+              {/* <label htmlFor="name">Name:</label> */}
               <input
                 type="text"
                 id="name"
                 value={name}
+                placeholder="Name"
                 onChange={(e) => setName(e.target.value)}
               />
 
-              <label htmlFor="email">Email:</label>
+              {/* <label htmlFor="email">Email:</label> */}
               <input
                 type="email"
                 id="email"
                 value={email}
+                placeholder="Email"
                 onChange={(e) => setEmail(e.target.value)}
               />
 
-              <label htmlFor="message">Message:</label>
+              {/* <label htmlFor="message">Message:</label> */}
               <textarea
                 id="message"
                 value={message}
+                cols="30" rows="5"
                 onChange={(e) => setMessage(e.target.value)}
+                placeholder="Message..."
               ></textarea>
 
               <button type="submit">Send</button>
